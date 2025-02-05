@@ -1,0 +1,67 @@
+:root {
+    /* Kleuren */
+    --white: white;
+    --bleu: #003366;
+    --grey: #333;
+    --black: rgb(0, 0, 0);
+    --border: .2rem solid rgb(5, 7, 2, 0.4);
+    --familiy: 'Courier New', Courier, monospace;
+    --shadow: .1rem .1rem .05rem rgba(5, 7, 2, 0.2);
+
+}
+
+
+body {
+    font-family: var(--familiy);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#parking-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.parking {
+    border: var(--border);
+    border-radius: .5rem;
+    flex-grow: 1;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: box-shadow .2s ease-in-out;
+    padding: 2rem;
+    margin: 10px;
+    background-color: beige;
+    width: 600px;
+    text-align: center;
+}
+
+h1{
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+h2 {
+  color:black;
+  
+}
+
+.open{
+    color: green;
+}
+
+.gesloten{
+    color: red;
+}
+
+

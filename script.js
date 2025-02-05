@@ -45,12 +45,15 @@ function displayData(parkings) {
             <h2>${name}</h2>
             <p>bezetting: ${occupation}</p>
             <p>capaciteit: ${totalcapacity}</p>
-            <p>open? ${status}</p>
+            <p class="status">${status}</p>
        `;
-       document.body.appendChild(parkingCard); // Voeg het toe aan de body (of een andere bestaande container)
-       
+       parkingDiv.appendChild(parkingCard); // Voeg het toe aan de body (of een andere bestaande container)
+       const pElements = parkingCard.getElementsByClassName("status");
+       Array.from(pElements).forEach(pElement => {
+        pElement.classList.add(isopennow ? "open" : "gesloten");
+       });
     });
-}
+};
 
 
 getData();
